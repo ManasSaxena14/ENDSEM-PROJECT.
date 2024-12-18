@@ -1,0 +1,217 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #fff;
+    color: black;
+  }
+  
+  header {
+    background: white;
+    border-bottom: 2px solid black;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  nav h1 {
+    font-family: DotGothic16;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;  
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+  }
+  
+  nav a {
+    font-family: DotGothic16;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    text-decoration: none;
+    color: #333;
+
+  }
+  
+  nav a:hover {
+    color: #e74c3c;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .main {
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  .main h1 {
+    font-family: DotGothic16;
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 120px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    letter-spacing: 0.05em;
+    margin: 20px 0;
+  }
+  
+  .main-image {
+    width: 18px;
+    height: 90px;
+    gap: 0px;
+    border-radius: 56px 0px 0px 0px;
+    border: 1px 0px 0px 0px;   
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.main-image:hover {
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05); 
+}
+
+  .projects {
+    padding: 40px 20px;
+  }
+
+  .projects p {
+    font-family: Archivo;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .project-item {
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    animation: shadowPulse 1s infinite alternate;
+  }
+  
+  .project-item img {
+    width: 416px;
+    height: 277px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+  }
+  
+  .project-item p {
+    margin: 10px 0 0;
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .project-item span {
+    color: #888;
+    font-size: 0.8em;
+  }
+
+  .bio {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .bio p {
+    font-family: DotGothic16;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;   
+  } 
+
+  .bio2{
+    display: flex;
+    justify-content: end;
+  }
+  .bio2 p {
+    font-family: Archivo;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.005em;
+    width: 50vw;
+  }
+
+  footer {
+    padding: 20px 0;
+    background: #f8f8f8;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+  }
+  
+  footer p {
+    text-align: start;
+    font-family: DotGothic16;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+  }
+  
+  .contact-btn {
+    padding: 12px 24px 12px 24px;
+    border-radius: 8px;
+    border: 1px 0px 0px 0px;
+    height: 50%;
+  }
+  
+  .contact-btn:hover {
+    background: #e74c3c;
+  }
+
+  .project-item:hover {
+    animation: shadowPulse 1.5s infinite alternate;
+  }
+  
+  @keyframes shadowPulse {
+    0% {
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+      box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  
+  
